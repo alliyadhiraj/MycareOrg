@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCare</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
+     rel="stylesheet" integrity="sha384- 
+     rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" 
+     crossorigin="anonymous">
+
+     <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">MyCare</a>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="/bookAppointment.html">Book Appoinment</a>
+              <a class="nav-link " href="/consult_online.html">Consult Online</a>
+              <a class="nav-link " href="#">Buy Medicine</a>
+              <a class="nav-link " href="/findHospital.html">Find Hospital</a>
+              <a class="nav-link " href="/doctorList.html">Doctor List</a>
+              <a class="nav-link " href="#">Contact Page</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="main-container">
+        <div class="appointment">
+            <h1>MEDICAL APPOINTMENT FORM</h1>
+        </div>
+        <div id="error_message"></div>
+        <div class="form">
+          <form class="form" action="" onsubmit="event.preventDefault();">
+            <div class="block">
+                <span class="inner-element" id="name">
+                    <h4>Patient Name</h4>
+                    <input type="text" id="name" placeholder="Name" />
+                </span>
+                <span class="inner-element">
+                    <h4>Phone Number</h4>
+                    <input type="tel" id="Phone" placeholder="Phone Number" />
+                </span>
+            </div>
+            <div class="block">
+                <span class="inner-element">
+                    <h4>Email</h4>
+                    <input type="email" id="email" placeholder="Email" />
+                </span>
+                <span class="inner-element">
+                    <h4>Symptoms</h4>
+                    <input type="text" id="symptoms" placeholder="symptoms" />
+                </span>
+            </div>
+            <div class="block">
+                <span class="inner-element">
+                    <h4>Select Date</h4>
+                    <input type="date" id="date" placeholder="Select Date" />
+                </span>
+                
+                <span class="inner-element">
+                    
+                    <h4>Choose a Department:</h4>
+                      <select name="dept" id="dept">
+                      <optgroup label="Department">
+                          <option value="Dentiest">Dentiest</option>
+                          <option value="Heart">Heart</option>
+                          <option value="Gyanacologiest">Gyanacologiest</option>
+                          <option value="Orthopedic">Orthopedic</option>
+                          <option value="MBBS">MBBS</option>
+                          <option value="Eye Care">Eye Care</option>
+                          <option value="Child Care">Child Care</option>
+                        </optgroup>
+                      
+                      
+                    </select>
+                </span>
+            </div>
+            
+            <div class="block">
+
+              <span class="inner-element">
+              <h4>Gender:</h4>
+              <select name="gender" id="gender">
+              <optgroup label="Gender">
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                  <option value="Others">Others</option>
+              </optgroup>
+              </select>
+              </span>
+
+              <span class="inner-element">
+                <h4>Time Slot</h4>
+                <input type="time" id="time" placeholder="Time Slot"/>
+            </span>
+
+            </div>
+
+            <button class="button" type="submit" onclick=validate()>Make An appointment</button>
+
+        </form>
+        
+      </div>
+      </div>
+      
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+<script src="./script.js"></script>
+</body>
+
+</html>
