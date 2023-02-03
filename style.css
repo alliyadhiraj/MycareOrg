@@ -282,7 +282,7 @@ body{
   
   .medicines{
       
-          border: 2px solid black;
+          /* border: 2px solid black; */
           width: 80%;
           margin: auto;
           height: 500px;
