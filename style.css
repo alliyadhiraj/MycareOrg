@@ -154,27 +154,52 @@ body{
     border: 1px solid black;
 }
 
+.consult{
+    height: 100%;
+}
+
+.cointainer{
+    text-align: center;
+    padding: 50px;
+    color: azure;
+    background-color: brown;
+}
+
+.para{
+    text-align: center;
+    margin-top: 25px;
+    font-weight: bold;
+    font-size: larger;
+
+}
+
 .img{
     background-image: url("./images/onlineConsult.jpg");
     height: 420px;
-    width: 800px;
+    width: 1000px;
     
     color: azure;
     
     /* padding-left: 10px; */
     background-position-x: center;
-    margin-left: 100px;
-    margin-top: 100px;
+    /* margin-left: 350px; */
+    margin: 36px 261px;
+    /* margin-top: 36px; */
 }
 .img h3{
     /* display: flex;
     align-items: center;
     justify-content: center; */
     text-align: center;
-    padding-top: 162px !important;
+    padding-top: 259px !important;
     font-size: 64px;
 }
 
+.catagories{
+    text-align: center;
+    margin-bottom: 100px;
+
+}
 
 /******************** find hospital section style ************/
 .findsection h1 {
@@ -193,4 +218,63 @@ body{
   .search button {
     margin-top: 20px;
   }
+
+.image{
+    
+    background-image :url("./images/medicine.jpg");
+    height: 420px;
+    width: 1520px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
   
+  
+}
+
+  .medicine{
+    height: 100%;
+  }
+  
+  .offers{
+    margin-top: 50px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+  }
+
+  .zydas{
+    background-image: url("./images/Zydus.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: aqua;
+    height: 200px;
+
+  }
+
+   
+  .gsk{
+    background-image: url("./images/GSK.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: aqua;
+    height: 200px;
+  }
+  
+  .cipla{
+    background-image: url("./images/cipla.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: aqua;
+    height: 200px;
+  }
+
+  .johnsons{
+    background-image: url("./images/jhonson.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: aqua;
+    height: 200px;
+  }
